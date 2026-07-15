@@ -34,3 +34,8 @@ Instead of coding timing logic, I will use profilers like JProfiler to measure e
 &emsp;2.1) If they match, returned the starting index.
 
 &emsp;2.2) If no match is found, returned -1.
+
+<br>
+
+## Task 3 – Review a Method
+&emsp;&emsp;&emsp;The method is harder to read. It nests four if statements, which makes the logic look more complicated. A cleaner approach is to combine all conditions into one line so the intent is obvious. Also, the code uses == to compare a string, instead it should use .equals("Lee") to check the actual text. I noticed also is the naming like the checkStudy because doesn’t really tell us what the method does. Something like isEligibleForMathsDistinction would make it clearer to other developers. Finally, we should think about null safety, because if student or student.getTeacherName() is null, this code could throw an exception. In short, the method works but can be refactored into a single, readable return statement that’s safer and easier to maintain.
