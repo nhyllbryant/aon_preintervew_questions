@@ -28,6 +28,9 @@ Instead of coding timing logic, I will use profilers like JProfiler to measure e
 ## Task 2 – Find Arrays
 
 1.) Iterated through the first array.
+
 2.) At each position, checked if the next elements match the second array.
+
 &emsp;2.1) If they match, returned the starting index.
+
 &emsp;2.2) If no match is found, returned -1.
